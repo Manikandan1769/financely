@@ -1,6 +1,8 @@
 import React from "react";
 import { Line,Pie } from "@ant-design/charts";
 
+import "./style.css"
+
 const Charts = ({ transactions }) => {
 
   const sortedTransactions = transactions.sort(
@@ -129,8 +131,9 @@ const Charts = ({ transactions }) => {
         <div>
           <h3 style={{margin:"0px"}}>Your Spendings</h3>
           <Pie {...spendingConfig}/>
-
-
+        </div>
+        
+        <div>
           <h3 style={{margin:"0px"}}>Your Income</h3>
           <Pie {...incomeConfig}/>
         </div>
